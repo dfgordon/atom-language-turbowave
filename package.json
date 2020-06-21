@@ -3,7 +3,7 @@
     "url": "https://github.com/dfgordon/atom-language-turbowave/issues"
   },
   "dependencies": {
-  	"tree-sitter-turbowave": "^1.0.1"
+    "tree-sitter-turbowave": "^1.0.1"
   },
   "description": "Atom language support for turboWAVE",
   "devDependencies": {},
@@ -28,5 +28,5 @@
     "type": "git",
     "url": "https://github.com/dfgordon/atom-language-turbowave.git"
   },
-  "version": "0.0.0"
+  "version": "0.1.0"
 }

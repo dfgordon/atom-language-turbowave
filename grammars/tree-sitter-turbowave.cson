@@ -7,8 +7,6 @@ fileTypes: [
   'tw'
 ]
 
-contentRegex: 'new ([a-zA-Z_]\\w*\\s)+for'
-
 folds: [
   {
     type: ['comment']

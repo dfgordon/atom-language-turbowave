@@ -19,6 +19,6 @@
     "tree-sitter"
   ],
   "dependencies": {
-    "tree-sitter-turbowave": "^1.0.1"
+    "tree-sitter-turbowave": "^1.0.5"
   }
 }

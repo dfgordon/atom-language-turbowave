@@ -1,5 +1,5 @@
 name: 'turbowave'
-scopeName: 'input.tw'
+scopeName: 'input.turbowave'
 type: 'tree-sitter'
 parser: 'tree-sitter-turbowave'
 

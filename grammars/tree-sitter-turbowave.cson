@@ -12,15 +12,16 @@ contentRegex: 'new ([a-zA-Z_]\\w*\\s)+for'
 folds: [
   {
     type: ['comment']
-  },
+  }
   {
-    start: {type: '"{"', index: 0},
-    end: {type: '"}"', index: -1}
+    type: ['block']
+    start: {index: 0}
+    end: {index: -1}
   }
 ]
 
 comments:
-  start: '// '
+ start: '// '
 
 scopes:
   '"#include"': 'keyword.control.directive'
@@ -37,17 +38,12 @@ scopes:
   generate > identifier_sequence
   ''' : 'builtin.object.tw'
 
+  'comment' : 'comment.block'
   'define_key' : 'variable.other.tw'
-  'decimal1' : 'constant.numeric.decimal'
-  'decimal2' : 'constant.numeric.decimal'
-  'unit_macro' : 'constant.other.tw'
+  'decimal' : 'constant.numeric.decimal'
+  'dimension' : 'constant.other.tw'
   'string_literal' : 'string.quoted.single'
-  '"true"': 'constant.language.boolean'
-  '"false"': 'constant.language.boolean'
-  '"on"': 'constant.language.boolean'
-  '"off"': 'constant.language.boolean'
-  '"yes"': 'constant.language.boolean'
-  '"no"': 'constant.language.boolean'
+  'boolean': 'constant.language.boolean'
 
   '","': 'punctuation.separator.delimiter'
   '"{"': 'punctuation.section.block.begin.bracket.curly'

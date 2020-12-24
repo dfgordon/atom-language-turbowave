@@ -16,6 +16,18 @@ folds: [
     start: {index: 0}
     end: {index: -1}
   }
+  {
+    type: ['ifxdef']
+    end: {type: ['else_block']}
+  }
+  {
+    type: ['ifxdef']
+    end: {index: -1}
+  }
+  {
+    type: ['else_block']
+    start: {index: 0}
+  }
 ]
 
 comments:
@@ -24,6 +36,10 @@ comments:
 scopes:
   '"#include"': 'keyword.control.directive'
   '"#define"': 'keyword.control.directive'
+  '"#ifdef"': 'keyword.control.directive'
+  '"#ifndef"': 'keyword.control.directive'
+  '"#else"': 'keyword.control.directive'
+  '"#endif"': 'keyword.control.directive'
 
   '"new"': 'keyword.control'
   '"generate"': 'keyword.control'
@@ -38,6 +54,7 @@ scopes:
 
   'comment' : 'comment.block'
   'define_key' : 'variable.other.tw'
+  'define_ref' : 'variable.other.tw'
   'decimal' : 'constant.numeric.decimal'
   'dimension' : 'constant.other.tw'
   'string_literal' : 'string.quoted.single'

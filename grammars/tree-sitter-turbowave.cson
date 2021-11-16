@@ -46,17 +46,11 @@ scopes:
   '"for"': 'keyword.control'
   '"get"': 'keyword.control'
 
-  '''
-  new > identifier_sequence,
-  associative_new > identifier_sequence,
-  generate > identifier_sequence
-  ''' : 'builtin.object.tw'
-
   'comment' : 'comment.block'
-  'define_key' : 'variable.other.tw'
-  'define_ref' : 'variable.other.tw'
+  'define_key' : 'variable.other'
+  'define_ref' : 'variable.other'
   'decimal' : 'constant.numeric.decimal'
-  'dimension' : 'constant.other.tw'
+  'dimension' : 'constant.other'
   'string_literal' : 'string.quoted.single'
   'boolean': 'constant.language.boolean'
 
